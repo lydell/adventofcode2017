@@ -3,8 +3,8 @@ module Day3 exposing (distance, firstLargerNumber, output, spiralLargerThan, str
 import AddingSpiral exposing (AddingSpiral)
 
 
-output : ( String, String )
-output =
+output : () -> ( String, String )
+output () =
     ( input |> distance |> toString
     , input |> firstLargerNumber |> toString
     )

@@ -3,8 +3,8 @@ module Day1 exposing (inverseCaptcha1, inverseCaptcha2, output)
 import Array
 
 
-output : ( String, String )
-output =
+output : () -> ( String, String )
+output () =
     ( toString (inverseCaptcha1 captcha)
     , toString (inverseCaptcha2 captcha)
     )

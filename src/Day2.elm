@@ -3,8 +3,8 @@ module Day2 exposing (checksum, dividesum, output, parse)
 import List.Extra
 
 
-output : ( String, String )
-output =
+output : () -> ( String, String )
+output () =
     ( spreadsheet |> parse |> checksum |> toString
     , spreadsheet |> parse |> dividesum |> toString
     )

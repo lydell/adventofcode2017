@@ -3,8 +3,8 @@ module Day4 exposing (numValid, output, validatePassPhrase1, validatePassPhrase2
 import Set
 
 
-output : ( String, String )
-output =
+output : () -> ( String, String )
+output () =
     ( input |> numValid validatePassPhrase1 |> toString
     , input |> numValid validatePassPhrase2 |> toString
     )
