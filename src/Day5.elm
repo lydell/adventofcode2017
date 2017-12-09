@@ -1,4 +1,4 @@
-module Day5 exposing (jumpThrough1, jumpThrough2, output)
+module Day5 exposing (..)
 
 import JumpList exposing (JumpList, JumpListInspection)
 

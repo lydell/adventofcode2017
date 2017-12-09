@@ -1,4 +1,4 @@
-module Day2 exposing (checksum, dividesum, output, parse)
+module Day2 exposing (..)
 
 import List.Extra
 

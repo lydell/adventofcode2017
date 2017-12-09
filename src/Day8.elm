@@ -1,4 +1,4 @@
-module Day8 exposing (ChangeType(..), Instruction, Operator(..), Registry, evaluate, largestRegisterValue, output, parse)
+module Day8 exposing (..)
 
 import Dict exposing (Dict)
 import Regex exposing (HowMany(AtMost), Match, Regex)
