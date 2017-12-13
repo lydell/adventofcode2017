@@ -1,18 +1,23 @@
 module Day13 exposing (..)
 
-import Firewall exposing (fromList, getSeverity, iterate)
+import Firewall exposing (findUncaughtDelay, fromList, getSeverity, iterate)
 
 
 output : () -> ( String, String )
 output () =
     ( input |> runThrough |> toString
-    , ""
+    , input |> runThroughUncaught |> toString
     )
 
 
 runThrough : String -> Int
 runThrough =
     parse >> fromList >> iterate >> getSeverity
+
+
+runThroughUncaught : String -> Int
+runThroughUncaught =
+    parse >> fromList >> findUncaughtDelay
 
 
 parse : String -> List ( Int, Int )
