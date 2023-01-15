@@ -1,3 +1,9 @@
+# Moved!
+
+Moved to https://github.com/lydell/advent-of-code/tree/main/2017
+
+---
+
 # [Advent of Code 2017] solutions
 
 Written in [Elm].
